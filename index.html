@@ -14,25 +14,25 @@
             <h1>Encyclopédie</h1>
         </header>
         <nav>
-        <!-- use the router-link component for navigation. --> 
-        <!-- specify the link by passing the `to` prop. --> 
-        <!-- `<router-link>` will render an `<a>` tag with thecorrect `href` attribute -->
-            <ul> 
-                <li>
-                    <router-link to="/">Accueil</router-link>
-                </li>
-                <li>
-                    <router-link to="/about">Listes d'articles</router-link>
-                </li>
-                <li>
-                    <router-link to="/user">Formulaire</router-link>
-                </li>
-            </ul>  
-       </nav>
+          <!-- use the router-link component for navigation. --> 
+          <!-- specify the link by passing the `to` prop. --> 
+          <!-- `<router-link>` will render an `<a>` tag with thecorrect `href` attribute -->
+              <ul> 
+                  <li>
+                      <router-link to="/">Accueil</router-link>
+                  </li>
+                  <li>
+                      <router-link to="/about">Listes d'articles</router-link>
+                  </li>
+                  <li>
+                      <router-link to="/user">Formulaire</router-link>
+                  </li>
+              </ul>  
+         </nav>
 <!-- route outlet -->
-<!-- component matched by the route will render here --> <router-view></router-view>
+<!-- component matched by the route will render here --> 
 <main>
-    <router-view></router-view>
+    <router-view>Nos articles</router-view>
 </main>
 <footer>Cours Vue.js</footer>
 </div>

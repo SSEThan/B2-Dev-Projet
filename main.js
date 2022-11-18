@@ -12,8 +12,7 @@ const Productlist = { data(){
     }
 }
     
-,template: `<div>
-Liste des produits<br/> 
+,template: `<div> Liste des produits<br/> 
 <ul>
     <li>
         <router-link to="/products/0">produit0</router-router-link>
@@ -25,7 +24,7 @@ Liste des produits<br/>
     <router-link to="/products/0">produit2</router-router-link>
     </li>
 </ul>
-<router-view></router-view></div>` }
+<router-view></router-view></div>`}
 
 const ProductDetails = { template: '<div>Fiche produit</div>' }
 
