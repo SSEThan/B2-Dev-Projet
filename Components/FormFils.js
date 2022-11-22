@@ -1,13 +1,20 @@
 const FormFils={
     template:
-        `<form @submit.prevent="onSubmit">
-        <h3>Nom de l'article</h3>
-        <input id="name" v-model="name"></input>
-         </form>
+       `<form @submit.prevent="onSubmit">
+        <label for="name">Nom de l'article</label>
+        <input id="name" v-model="name" placeholder="Nom de l'article"></input>
+
+        <label for="categorie">La catégorie</label>
+        <input id="categorie" v-model="name" placeholder="La catégorie"></input>
+
+        <label for="nomauteur">Le nom de l'auteur</label>
+        <input id="nomauteur" v-model="nomauteur" placeholder="Nom de l'auteur"></input>
+        </form>
     `,
     data() {
         return {
-            name: ''
+            name: '',
+            categorie: '',
         }
     },
     methods: {
@@ -17,5 +24,5 @@ const FormFils={
     },
     updated(){
         this.$emit('form-submitted', this.name)
-    }
+    },
 }
