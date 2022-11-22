@@ -11,33 +11,22 @@
 <body>
     <div id="app">
         <header>
-            <h1>Encyclopédie</h1>
+                <h1>Hello App!</h1>
         </header>
-        <nav>
-          <!-- use the router-link component for navigation. --> 
-          <!-- specify the link by passing the `to` prop. --> 
-          <!-- `<router-link>` will render an `<a>` tag with thecorrect `href` attribute -->
-              <ul> 
-                  <li>
-                     <router-link to="/">Accueil</router-link>
-                  </li>
-                  <li>
-                      <router-link to="/about">Listes d'articles</router-link>
-                  </li>
-                  <li>
-                      <router-link to="/user">Formulaire</router-link>
-                  </li>
-              </ul>  
-         </nav>
-<!-- route outlet -->
-<h2>Description de notre Encyclopédie </h2>
-<!-- component matched by the route will render here --> 
+        <nav-bar></nav-bar>
+        <main>
+        <router-view></router-view>
+        </main>
 
-<main>
-    <router-view>Nos articles</router-view>   
-</main>
-<footer>Cours Vue.js</footer>
+        <foot-bar></foot-bar>
+        
 </div>
-        <script src="./main.js"></script>
-</html>
+
+<script src="./Components/ProductList.js"></script>
+<script src="./Components/Footer.js"></script>
+<script src="./Components/Nav.js"></script>
+<script src="./Components/FormPere.js"></script>
+<script src="./Components/FormFils.js"></script>
+<script src="./main.js"></script>
 </body>
+</html>
