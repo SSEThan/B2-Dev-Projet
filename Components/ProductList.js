@@ -2,8 +2,8 @@ const  ProductList = {
 	data() {
 	  return {
 		produits: [
-		  { id: 0, name: "produit1",routeProd:"/products/0" },
-		  { id: 1, name: "produit2",routeProd:"/products/1" }
+		  { id: 0, name: "article1",routeProd:"/products/0" },
+		  { id: 1, name: "article2",routeProd:"/products/1" }
 		]
 	  }
 	}, 

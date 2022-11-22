@@ -6,10 +6,10 @@ const  Nav = {
 					<router-link to="/">Accueil</router-link>
 			</li>
 			<li>
-					<router-link to="/products">Liste produit</router-link>
+					<router-link to="/products">Nosarticles</router-link>
 			</li>
 			<li>
-					<router-link to="/contact">Contact</router-link>
+					<router-link to="/contact">Formulaire</router-link>
 			</li>
 	</ul>
 </nav>` }
