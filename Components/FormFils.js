@@ -1,6 +1,8 @@
 const FormFils={
     template:
-       `<form @submit.prevent="onSubmit">
+       `<div class="form-creation>
+       <form @submit.prevent="onSubmit">
+        <div>
         <label for="name">Nom de l'article</label>
         <input id="name" v-model="name" placeholder="Nom de l'article"></input>
 
@@ -10,6 +12,7 @@ const FormFils={
         <label for="nomauteur">Le nom de l'auteur</label>
         <input id="nomauteur" v-model="nomauteur" placeholder="Nom de l'auteur"></input>
         </form>
+        </div class="form-creation>
     `,
     data() {
         return {
