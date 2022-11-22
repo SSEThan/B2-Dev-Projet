@@ -1,9 +1,9 @@
 const FormFils={
     template:
         `<form @submit.prevent="onSubmit">
-    <input id="name" v-model="name"></input>
-    
-    </form>
+        <h3>Nom de l'article</h3>
+        <input id="name" v-model="name"></input>
+         </form>
     `,
     data() {
         return {

@@ -1,7 +1,7 @@
 const FormPere={
     template:
         `<div>
-            <h2>composant père :{{name}}</h2>
+            <h2>Ajouter un article :{{name}}</h2>
             <form-fils @form-submitted="showName"></form-fils>
       </div>
     `,

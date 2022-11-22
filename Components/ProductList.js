@@ -8,7 +8,7 @@ const  ProductList = {
 	  }
 	}, 
 	template: `<div>
-  Liste des produits<br/>
+  Nos articles<br/>
   <ul>
 	<li v-for="el in produits">
 	  <router-link :to="{ name:'productDesc',params:{id:el.id}}">{{ el.name }}</router-link>
