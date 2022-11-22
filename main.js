@@ -1,4 +1,4 @@
-const Home = { template: '<div>Bienvenue sur notre site de test<p>Fait le 14/11/2022 avec les B2 CWD</p></div>' }
+const Home = { template: '<div>Bienvenue sur notre Encyclopédie</p></div>' }
 
 const ProductDetails = {
   template: `<div>Fiche produit <br/>
