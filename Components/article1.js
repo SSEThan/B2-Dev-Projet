@@ -1,14 +1,14 @@
 const article1={
     template:
         `<div>
-        <router-view></router-view>
+        <router-link :to="{ name:'productList',params:{id:el.id}}">{{ el.name }}</router-link>
          </div>
     `,
     data() {
         return {
             id: 0,
             name: 'The Crown saison 5: retour sur la décennie infernale des Windsor',
-            route: ProductList,
+            route: productDesc,
             Corps:'Les années 1990, marquées par de nombreux changements politiques, ont vu la famille royale se déliter sur le plan privé. Rien de tel qu un exhaustif rappel des faits pour se préparer au visionnage de cette nouvelle saison. La cinquième saison de The Crown, la série britannique consacrée а la vie d Elizabeth II d Angleterre, est sortie le 9 novembre. Le nouveau volet couvre les événements des années 1990 qui sur le plan politique et privé ont défini cette période de son règne. Mais que s est-il passé exactement pendant ces années?',
             Image: '',
             source: 'https://www.slate.fr/story/236213/the-crown-saison-5-netflix-elizabeth-ii-lady-diana-prince-charles-annus-horribilis',

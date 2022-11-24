@@ -15,5 +15,4 @@ const  ProductList = {
 	</li>
   </ul>
   <hr/>
-  <router-view></router-view> 
   </div>` }
