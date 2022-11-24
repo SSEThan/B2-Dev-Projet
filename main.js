@@ -1,9 +1,8 @@
-const Home = { template: '<div>Bienvenue sur notre Encyclopédie</p></div>' }
+const Home = { template: '<div>Bienvenue sur notre Encyclopédie dédiée au film et série Netflix.Ces articles ont été rédigé par CamilleB, Ethan D, Adrien J</p></div>' }
 
 const ProductDetails = {
-  template: `<div>Fiche produit <br/>
+  template: `<div>Fiche <br/>
 Identifiant produit : {{$route.params.id}}
-
 </div>` }
 
 

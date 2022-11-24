@@ -9,7 +9,7 @@ const  Nav = {
 					<router-link to="/products">Nos articles</router-link>
 			</li>
 			<li>
-					<router-link to="/contact">Formulaire</router-link>
+					<router-link to="/contact">Ajouter un article</router-link>
 			</li>
 	</ul>
 </nav>` }
