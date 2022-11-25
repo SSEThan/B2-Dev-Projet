@@ -44,7 +44,7 @@ const app = Vue.createApp({})
 // Make sure to _use_ the router instance to make the
 // whole app router-aware.
 app.use(router)
-app.component('nav-bar',Nav)
+//app.component('nav-bar',Nav)
 app.component('foot-bar',Footer)
 app.component('form-fils',FormFils)
 

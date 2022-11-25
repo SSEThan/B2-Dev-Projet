@@ -6,12 +6,21 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
     <link rel="stylesheet/less" type="text/css/less" type="text/css" href="./style.less" />
+    <link rel="stylesheet/less" type="text/css/less" type="text/css" href="./style-nav-bar.less" />
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </head>
 <body>
     <div id="app">
         <header>
-                <h1>L'Encyclopédie</h1>
+        <img class="logo" src="img/logo.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+            <li><a href="/">Acceuil</a></li>
+            <li><a href="/">Nos Articles</a></li>
+            <li><a><router-link to="/contact">Ajouter un article</router-link></a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button class="button-nav">Contact</button></a>
         </header>
         <nav-bar></nav-bar>
         <main>
@@ -27,8 +36,6 @@
 <script src="./Components/Nav.js"></script>
 <script src="./Components/FormPere.js"></script>
 <script src="./Components/FormFils.js"></script>
-<script src="./Components/article1.js"></script>
-<script src="./Components/article2.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
