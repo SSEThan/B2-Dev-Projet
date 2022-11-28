@@ -21,6 +21,6 @@ const article1={
             }
           },
          updated(){
-            this.$emit('article1', this.name)
+            this.$emit('0', this.name)
         },
 }
