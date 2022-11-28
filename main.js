@@ -4,7 +4,8 @@ const Home = { template: '<div>Bienvenue sur notre Encyclopédie dédiée au fil
 const ProductDetails = {
   template: `<div>Fiche <br/>
 Identifiant produit : {{$route.params.id}}
-</div>` }
+</div>`,
+} 
 
 
 
@@ -51,3 +52,4 @@ app.component('form-fils',FormFils)
 app.mount("#app")
 
 // Now the app has started!
+
