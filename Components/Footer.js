@@ -1,3 +1,3 @@
 
 const  Footer = {
-	template: `<footer>Projet Encyclopedie Camille B Ethan D Adrien Jvue.js</footer>` }
+	template: `<footer>Projet Encyclopedie Camille B Ethan D Adrien J vue.js</footer>` }
