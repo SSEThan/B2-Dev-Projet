@@ -17,7 +17,10 @@ const article1={
           },
           methods: {
             showName(txt) {
-                this.article1 = txt
+                this.name = txt
             }
           },
+         updated(){
+            this.$emit('article1', this.name)
+        },
 }

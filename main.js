@@ -4,6 +4,7 @@ const Home = { template: '<div>Bienvenue sur notre Encyclopédie dédiée au fil
 const ProductDetails = {
   template: `<div>Fiche <br/>
 Identifiant produit : {{$route.params.id}}
+
 </div>`,
 } 
 
