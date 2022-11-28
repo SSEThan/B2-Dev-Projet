@@ -1,27 +1,25 @@
+// 1. Définir ce qui apparait sur la page d'accueil.
 const Home = { template: '<div>Bienvenue sur notre Encyclopédie dédiée au film et série Netflix.<br>Ces articles ont été rédigé par CamilleB, Ethan D, Adrien J</p></div>'
  }
 
 const ProductDetails = {
   template: `<div>Fiche <br/>
 Identifiant produit : {{$route.params.id}}
-
 </div>`,
 } 
 
 
 
 
-// 2. Define some routes
-// Each route should map to a component.
-// We'll talk about nested routes later.
+// 2. Définir des itinéraires
 const routes = [
   { path: '/', component: Home },
   {
     path: '/products', component: ProductList,
     children: [
       {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
+        // UserProfile sera rendu dans la <router-view> de l'utilisateur.
+        // quand /user/:id/profile est trouvé
         path: ':id',
         name:'productDesc',
         component: ProductDetails,
@@ -32,19 +30,17 @@ const routes = [
 
 ]
 
-// 3. Create the router instance and pass the `routes` option
-// You can pass in additional options here, but let's
-// keep it simple for now.
+// 3. Créer l'instance de routeur et passer l'option `routes`.
 const router = VueRouter.createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+
+  // 4. Fournir l'implémentation de l'historique à utiliser. Pour des raisons de simplicité, nous utilisons ici l'historique de hachage.
   history: VueRouter.createWebHashHistory(),
-  routes, // short for `routes: routes`
+  routes, // 
 })
 
-// 5. Create and mount the root instance.
+// 5. Créer et monter l'instance root.
 const app = Vue.createApp({})
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
+// on utilise l'instance de routeur pour que l'ensemble de l'application soit compatible avec le routeur.
 app.use(router)
 //app.component('nav-bar',Nav)
 app.component('foot-bar',Footer)
@@ -52,5 +48,4 @@ app.component('form-fils',FormFils)
 
 app.mount("#app")
 
-// Now the app has started!
 
