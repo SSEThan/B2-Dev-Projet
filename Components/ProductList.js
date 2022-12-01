@@ -1,6 +1,5 @@
   const ProductList = {
 	template: `<div class="article-view">
-	
 	<!-- Utilisation de for pour parcourir toute la data liste -->
 	<!-- Affichage de chaque élément avec son nom dans la data liste -->
 	<div v-for="item in listedata">
