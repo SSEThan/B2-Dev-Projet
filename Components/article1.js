@@ -4,9 +4,9 @@ const article1={
         <!-- Lorsque showListe est différent du booléen actuel alors il affichera le logo et les articles -->
         <div v-if="!showListe" class="liste-article-position">
         <div class="articles-image">
-        <div className="mascotte-position">
-        <div className="circle-mascotte"></div>
-        <img class="mascotte" src="../images/mascotte.png" alt="Image de la mascotte" />
+        <div className="crown-position">
+        <div className="circle-thecrown"></div>
+        <img class="Crown" src="" alt="Image de The Crown" />
         </div>
         <input class="search-bar" placeholder="Search" type="text" v-model="search" />
         <ul>
