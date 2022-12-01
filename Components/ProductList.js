@@ -24,7 +24,7 @@
 	</div>
 	</div>`,
 	
-	// Récupération des données du fichier listeArticles en les mettant dans une props
+	// On récupère des données du fichier listeArticles et on les mets dans une props
 	props: ["listedata", "idActuel", "showListe"],
 	methods: {
 	changeArticle(id) {
