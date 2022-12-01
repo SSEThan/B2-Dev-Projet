@@ -5,7 +5,7 @@ const article1={
         <div v-if="!showListe" class="liste-article-position">
         <div class="articles-image">
         <div className="crown-position">
-        <input class="search-bar" placeholder="Search" type="text" v-model="search" />
+        <input class="search-bar" placeholder="Search" type="text" v-model="search"/>
         <ul>
         <li v-for="article in filteredPosts">
         <router-link class="article" @click="updateShowListe(article.id)" :to="{ path:article.router }">{{ article.name }}</router-link>
