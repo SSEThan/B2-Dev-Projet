@@ -1,28 +1,20 @@
 // 1. Définir ce qui apparait sur la page d'accueil.
-const Home = { template: '<div>Bienvenue sur notre Encyclopédie dédiée au film et série Netflix.<br>Ces articles ont été rédigé par CamilleB, Ethan D, Adrien J</p></div>'
+const Home = { 
+  template: 
+  '<div>Bienvenue sur notre Encyclopédie dédiée au film et série Netflix.<br>Ces articles ont été rédigé par CamilleB, Ethan D, Adrien J</p></div>'
  }
-
-const ProductDetails = {
-  template: `<div> Fiche <br/>
-Identifiant produit : {{$route.params.id}}
-</div>`,
-} 
-
-
 
 
 // 2. Définir des itinéraires
 const routes = [
-  { path: '/', component: Home },
-  {
-    path: '/products', component: ProductList,
+  { path: '/', 
+    component: ProductList,
     children: [
       {
         // UserProfile sera rendu dans la <router-view> de l'utilisateur.
         // quand /user/:id/profile est trouvé
         path: ':id',
-        name:'productDesc',
-        component: ProductDetails,
+        component: article1,
       }
     ],
   },

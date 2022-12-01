@@ -1,30 +1,36 @@
-const  ProductList = {
-	data() {
-	  return {
-		produits: [
-		  { 
-			id: 0, 
-			name: "The Crown saison 5: retour sur la décennie infernale des Windsor",
-			router:"/productDesc", 
-			Corps:'Les années 1990, marquées par de nombreux changements politiques, ont vu la famille royale se déliter sur le plan privé. Rien de tel qu un exhaustif rappel des faits pour se préparer au visionnage de cette nouvelle saison.La cinquième saison de The Crown, la série britannique consacrée а la vie d Elizabeth II d Angleterre, est sortie le 9 novembre. Le nouveau volet couvre les événements des années 1990 qui sur le plan politique et privé ont défini cette période de son règne. Mais que s est-il passé exactement pendant ces années?', 
-			
+  const ProductList = {
+	template: `<div class="article-view">
+	
+	<!-- Utilisation de for pour parcourir toute la data liste -->
+	<!-- Affichage de chaque élément avec son nom dans la data liste -->
+	<div v-for="item in listedata">
+	<div v-if="idActuel == item.id" class="article-actuel">
+	<h1>{{ item.titre }}</h1>
+	<div className="position-image-article1">
+	img :src="item.image" class="image-article1" alt="Image de the Crown" />
+	</div>
+	<div className="corps-article-infos">
+	<p class="categorie">Catégorie: {{ item.categorie }}</p>
+	<p class="corps-article">{{ item.corps }}</p>
+	<p class="auteur">Auteur: {{ item.auteur }}</p>
+	a :href="item.source" class="source">Source pour cet article</a>
+	</div>
+	</div>
+	
+	<!-- Affichage des articles connexes -->
+	<div class="connexe" v-else>
+	<router-link @click="changeArticle(item.id)" :to="{ path:item.router }">Aller à l'article <span>{{ item.name }}</span></router-link>
+	</div>
+	</div>
+	</div>`,
+	
+	// Récupération des données du fichier listeArticles en les mettant dans une props
+	props: ["listedata", "idActuel", "showListe"],
+	methods: {
+	changeArticle(id) {
+	this.$emit("ChangeArticle", id);
 		},
-		  { id: 1, 
-			name: "La “Mercredi” de la famille Addams ressuscitée par Tim Burton",
-			router:"/productDesc" 
-		}
-		]
-	  }
-	}, 
-	template: `<div>
-  Nos articles<br/>
-  <ul>
-	<li v-for="el in produits">
-	  <router-link :to="{ name:'productDesc',params:{id:el.id}}">{{ el.name }}</router-link>
-	</li>
-  </ul>
-  <hr/>
-  <router-view></router-view> 
-  </div>` }
+	},
+	};
 
 
