@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300&display=swap');
+
+
+//Ajout de Variables
+@CouleurTransparent : rgba(255, 0, 0, 0);
+@PlaceHolderTexte : rgba(255, 255, 255, 0.447);
+@BoxShadow : 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+@FocusBackgroundColor : lighten(@FormBackgroundCOlor,20%);
+@FormBackgroundCOlor : #ffffff2e;
+@FontSizeTitre : 45px;
+@FontSizeTexte : 25px;
+
+//Ajout de Mixin
+.FlexBoxCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+body {
+    background: linear-gradient(-45deg,rgb(110, 110, 110),rgb(29, 29, 29) 70%);
+    min-height:2000px;
+    color: white;
+    font-family:    "Lato", sans-serif ;
+}
+
+
+
+
+//Header
+.logo{
+    width: auto;
+    height: 300px;
+}
+.head{
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: @BoxShadow;
+    a{
+        color: white;
+        transition: 0.5s;
+        border-radius: 20px;
+        padding: 10px;
+        font-family:    "Lato", sans-serif ;
+        font-size: 40px;
+        margin : 15px;
+        &:hover{
+            color:white;
+            background-color: red;
+            border-radius: 20px;
+            padding: 10px;
+            margin : 15px;
+            box-shadow: 0px 0px 10px 4px red;
+            font-family:    "Lato", sans-serif ;
+            font-size: 40px;
+            transition: 0.5s;
+        }
+    }
+
+}
+.head2{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 30px 250px 30px 30px ;
+    box-shadow: @BoxShadow;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texteHome{
+    .FlexBoxCenter();
+    flex-direction: row;
+    p{
+        text-align: center;
+    }
+    font-size: @FontSizeTitre;
+}
+
+
+//Footer
+footer {
+    .FlexBoxCenter();
+   text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+}
+.footer {
+    .FlexBoxCenter();
+}
+
+//Articles
+.divArticles{
+    .FlexBoxCenter();
+    flex-direction: column;
+}
+.TitreArticles{
+    font-family: "Lato", sans-serif;
+    font-size: @FontSizeTitre;
+}
+a{
+    color: white;
+    font-family:"Lato", sans-serif ;
+    font-size: 35px;
+    transition: 0.5s;
+    padding: 10px;
+        margin : 15px;
+}
+a:hover{
+    color: red;
+    font-family:"Lato", sans-serif ;
+    font-size: 35px;
+    transition: 0.5s;
+    padding: 10px;
+        margin : 15px;
+}
+.TitreSection-Article{
+    font-family:"Lato", sans-serif ;
+    font-size: @FontSizeTitre;
+}
+.Article{
+    .FlexBoxCenter();
+    flex-direction: column;
+    background-color: rgba(193, 193, 193, 0.163);
+    padding:15px;
+    border-radius: 35px;
+    margin: 15px;
+    box-shadow: @BoxShadow;
+}
+.CategorieArticle{
+    .FlexBoxCenter();
+    color : red;
+    flex-direction: column;
+    font-family:"Lato", sans-serif ;
+    font-size: @FontSizeTexte;
+}
+.Text-Article{
+    font-family:"Lato", sans-serif ;
+    color:white;
+    font-size: @FontSizeTexte;    
+    .FlexBoxCenter();
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.auteur{
+    .FlexBoxCenter();
+    color:white;
+    flex-direction: column;
+    font-family:"Lato", sans-serif ;
+    font-size: 25px;
+}
+.illustration{
+    .FlexBoxCenter();
+    flex-direction: column;
+    
+}
+.illustration-image{
+    border-radius: 15px;
+    box-shadow: @BoxShadow;
+    width: auto;
+    height: 700px;
+}
+
+
+//Form
+form{
+    color:white;
+    border-radius: 50px;
+    background: @FormBackgroundCOlor;
+    padding: 50px;
+    box-shadow: @BoxShadow;
+    .FlexBoxCenter();
+    flex-direction: column;
+    padding:15px;
+    margin: 15px;
+    margin-inline: 600px;
+    padding-bottom: 30px;
+}
+textarea::placeholder{
+    color:@PlaceHolderTexte;
+    font-size: 35px; 
+}
+select::placeholder{
+    color:@PlaceHolderTexte;
+    font-size: 35px;
+}
+.name::placeholder{
+    color:@PlaceHolderTexte;
+    font-size: 35px;
+}
+input::placeholder{
+    color:@PlaceHolderTexte;
+    font-size: 35px;
+}
+textarea{
+    border:1px solid @CouleurTransparent;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    
+    color:black;
+    font-family: "Montserrat",sans-serif;
+    font-size: 35px;
+    border-color: @CouleurTransparent;
+    background-color:@FormBackgroundCOlor;
+    box-shadow: @BoxShadow;
+    transition: 0.5s; 
+    width: auto;
+    height: 150px;
+}
+select{
+    border:1px solid @CouleurTransparent;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    color:black;
+    font-family: "Montserrat",sans-serif;
+    font-size: 35px;
+    border-color: @CouleurTransparent;
+    background-color:@FormBackgroundCOlor;
+    box-shadow: @BoxShadow;
+    transition: 0.5s; 
+}
+.name{
+    border:1px solid @CouleurTransparent;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    color:black;
+    font-family: "Montserrat",sans-serif;
+    border-color: @CouleurTransparent;
+    background-color:@FormBackgroundCOlor;
+    box-shadow: @BoxShadow;
+    transition: 0.5s; 
+}
+option{
+    border:1px solid @CouleurTransparent;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    color:black;
+    font-family: "Montserrat",sans-serif;
+    border-color: @CouleurTransparent;
+    background-color:@FormBackgroundCOlor;
+    box-shadow: @BoxShadow;
+    transition: 0.5s;
+}
+input{
+    border:1px solid @CouleurTransparent;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    color:black;
+    font-family: "Montserrat",sans-serif;
+    font-size: 35px;
+    border-color: @CouleurTransparent;
+    background-color:@FormBackgroundCOlor;
+    box-shadow: @BoxShadow;
+    transition: 0.5s;
+}
+textarea:focus{
+    border-color: @CouleurTransparent;
+    outline: none !important;
+    background-color:@FocusBackgroundColor;
+    border:0px solid @CouleurTransparent;
+    transition: 0.5s;
+}
+select:focus{
+    border-color: @CouleurTransparent;
+    outline: none !important;
+    background-color:@FocusBackgroundColor;
+    border:0px solid @CouleurTransparent;
+    transition: 0.5s;
+}
+.name:focus{
+    border-color: @CouleurTransparent;
+    outline: none !important;
+    background-color:@FocusBackgroundColor;
+    border:0px solid @CouleurTransparent;
+    transition: 0.5s;
+}
+input:focus{
+    border-color: @CouleurTransparent;
+    outline: none !important;
+    background-color:@FocusBackgroundColor;
+    border:0px solid @CouleurTransparent;
+    transition: 0.5s;
+}
+.button-valider-div{
+    .FlexBoxCenter();
+}
+.button-valider{
+    border-radius: 5px;
+    padding: 5px;
+    color:white;
+    background-color: @FormBackgroundCOlor;
+    border-color: @CouleurTransparent;
+    box-shadow: @BoxShadow;
+    transition:500ms;
+}
+.button-valider:hover{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ff0d0d44;
+    border-color: @CouleurTransparent;
+    transition:500ms;
+}
+
+
+
+
+
+.TitreSection{
+    .FlexBoxCenter();
+    font-family:"Lato", sans-serif ;
+    font-size: 45px;
+}

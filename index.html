@@ -3,40 +3,53 @@
 <head>
     <meta charset="utf-8" />
     <title>Projet Encyclopédie</title>
+    <link rel="stylesheet/less" type="text/css" href="./style2.less" />
+    <script src = "./less.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
-    <link rel="stylesheet/less" type="text/css/less" type="text/css" href="./style.less" />
-    <link rel="stylesheet/less" type="text/css/less" type="text/css" href="./style-nav-bar.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    
 </head>
 <body>
     <div id="app">
         <header>
-        <img class="logo" src="img/logo.png" alt="logo">
-        <nav>
-            <ul class="nav__links">
-            <li><a href="/">Accueil</a></li>
-            <li><a><router-link to="/products">Nos Articles</router-link></a></li>
-            <li><a><router-link to="/contact">Ajouter un article</router-link></a></li>
-            </ul>
+            <div class="head">
+                <div class="head2">
+            <div class="logimg">
+            <img class="logo" src="img/logo.png" alt="logo">
+            </div>
+            <div class="nav-link">
+            <a href="./index.html">Accueil</a>
+            <!-- on utilise le composant routeur-lien pour la navigation. --> 
+            <!-- on spécifie le lien en passant la prop `to`. --> 
+            <a><router-link to="/products">Nos Articles</router-link></a>
+            <a><router-link to="/contact" class="button-nav">Ajouter un article</router-link></a>
+            </div>
+        </div>
+            
         </nav>
-        <a class="cta" href="#"><button class="button-nav">Contact</button></a>
+        
+        </div>
         </header>
-        <nav-bar></nav-bar>
+        <!-- on utilise le composant routeur-lien pour le formulaire. --> 
         <main>
-        <router-view></router-view>
+        <router-view @formsub="ajoutArticle"></router-view>
         </main>
 
-        <foot-bar></foot-bar>
+        <!-- Emplacement du footer --> 
+        <footer>
+            <div class="footer">
+            Projet Encyclopedie Camille B Ethan D Adrien J - ♡ Youenn pour son aide
+        </div>
+        </footer>
         
 </div>
-
+<!-- On importe le composant .js dans le html où il est appelé -->
 <script src="./Components/ProductList.js"></script>
 <script src="./Components/Footer.js"></script>
-<script src="./Components/Nav.js"></script>
 <script src="./Components/FormPere.js"></script>
 <script src="./Components/FormFils.js"></script>
 <script src="./Components/article1.js"></script>
+<script src="./Components/ArticleDetails.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>

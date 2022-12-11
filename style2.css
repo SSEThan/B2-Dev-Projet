@@ -1,0 +1,362 @@
+/**sajout de polices**/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHh30wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+/**style de la page article**/
+.FlexBoxCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: linear-gradient(-45deg, #6e6e6e, #1d1d1d 70%);
+  min-height: 2000px;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.logo {
+  width: auto;
+  height: 300px;
+}
+.head {
+  background-color: #ff0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+}
+.head a {
+  color: white;
+  transition: 0.5s;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  margin: 15px;
+}
+.head a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0px 0px 10px 4px red;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  transition: 0.5s;
+}
+.head2 {
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 30px 250px 30px 30px ;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.texteHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 45px;
+}
+.texteHome p {
+  text-align: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divArticles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.TitreArticles {
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+}
+a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 15px;
+}
+a:hover {
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 15px;
+}
+.TitreSection-Article {
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+}
+.Article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(193, 193, 193, 0.163);
+  padding: 15px;
+  border-radius: 35px;
+  margin: 15px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+}
+.CategorieArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.Text-Article {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.auteur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.illustration-image {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  width: auto;
+  height: 700px;
+}
+/**style du formulaire d'ajout article**/
+form {
+  color: white;
+  border-radius: 50px;
+  background: #ffffff2e;
+  padding: 50px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+  margin-inline: 600px;
+  padding-bottom: 30px;
+}
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.447);
+  font-size: 35px;
+}
+select::placeholder {
+  color: rgba(255, 255, 255, 0.447);
+  font-size: 35px;
+}
+.name::placeholder {
+  color: rgba(255, 255, 255, 0.447);
+  font-size: 35px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.447);
+  font-size: 35px;
+}
+textarea {
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  border-color: rgba(255, 0, 0, 0);
+  background-color: #ffffff2e;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 0.5s;
+  width: auto;
+  height: 150px;
+}
+select {
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  border-color: rgba(255, 0, 0, 0);
+  background-color: #ffffff2e;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 0.5s;
+}
+.name {
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border-color: rgba(255, 0, 0, 0);
+  background-color: #ffffff2e;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 0.5s;
+}
+option {
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border-color: rgba(255, 0, 0, 0);
+  background-color: #ffffff2e;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 0.5s;
+}
+input {
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  border-color: rgba(255, 0, 0, 0);
+  background-color: #ffffff2e;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 0.5s;
+}
+textarea:focus {
+  border-color: rgba(255, 0, 0, 0);
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.18039216);
+  border: 0px solid rgba(255, 0, 0, 0);
+  transition: 0.5s;
+}
+select:focus {
+  border-color: rgba(255, 0, 0, 0);
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.18039216);
+  border: 0px solid rgba(255, 0, 0, 0);
+  transition: 0.5s;
+}
+.name:focus {
+  border-color: rgba(255, 0, 0, 0);
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.18039216);
+  border: 0px solid rgba(255, 0, 0, 0);
+  transition: 0.5s;
+}
+input:focus {
+  border-color: rgba(255, 0, 0, 0);
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.18039216);
+  border: 0px solid rgba(255, 0, 0, 0);
+  transition: 0.5s;
+}
+.button-valider-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-valider {
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: #ffffff2e;
+  border-color: rgba(255, 0, 0, 0);
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.222);
+  transition: 500ms;
+}
+.button-valider:hover {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ff0d0d44;
+  border-color: rgba(255, 0, 0, 0);
+  transition: 500ms;
+}
+.TitreSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+}

@@ -70,7 +70,7 @@
             urlArgs: ''
         };
     }
-
+/* AJout de fonctions  */
     function extractId(href) {
         return href.replace(/^[a-z-]+:\/+?[^\/]+/, '') // Remove protocol & domain
             .replace(/[\?\&]livereload=\w+/, '') // Remove LiveReload cachebuster
